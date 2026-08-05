@@ -1,0 +1,8 @@
+﻿docker run -d --name pg-hotels \
+  -e POSTGRES_USER=<YOUR_USER> \
+  -e POSTGRES_PASSWORD=<YOUR_PASSWORD> \
+  -e POSTGRES_DB=hotel_booking \
+  -p 5432:5432 \
+  postgres:16
+
+  # Якщо порт 5432 зайнятий, замініть на вільний, напр. -p 5433:5432
