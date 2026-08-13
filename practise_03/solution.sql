@@ -211,7 +211,7 @@ WHERE department_id IN (
     GROUP BY department_id 
     HAVING SUM(salary) > 100000
 )
-ORDER BY department_id
+ORDER BY department_id;
 
 -- Завдання 5.3
 SELECT employee_id, first_name, last_name
@@ -229,6 +229,7 @@ WHERE department_id IN (
 ORDER BY employee_id;
 
 -- Завдання 5.4
+SELECT employee_id, last_name, salary, job_id
 FROM employees e
 WHERE e.salary > (
     SELECT max_salary
